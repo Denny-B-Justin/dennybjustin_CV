@@ -1,0 +1,256 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.00in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Denny B. Justin} \\ \vspace{1pt}
+    IIT Kharagpur, India \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ (+91) 9400-626304 ~ \href{mailto:dennybjustin2911.iitkgp@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{dennybjustin2911.iitkgp@gmail.com}} ~ 
+    \href{https://linkedin.com/in/denny-b-justin-2340a1215}{\raisebox{-0.2\height}\faLinkedin\ \underline{denny-b-justin-2340a1215}}  ~
+    \href{https://github.com/Denny-B-Justin}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/Denny-B-Justin}}
+    \vspace{-5pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology Kharagpur}{November 2020 -- May 2025}
+      {Dual Degree in Agricultural and Food Engineering (B.Tech + M.Tech Dual 5 yr)}{CGPA: 7.51/10}   
+      
+       { }{ }
+      {Agricultural Systems and Management Specialization}
+  \resumeSubHeadingListEnd
+  \vspace{-15pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{Proficiencies}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+    \textbf{Area of Focus}{: Financial Institutions, Risk Management, Corporate Finance, Corporate Governance, Economics, and M\&A} \\
+     \textbf{Hard Skills}{: Python, Bloomberg, RStudio, C/C++, Pandas, Matplotlib, OpenCV, Proteus, FreeCAD, MS Excel, SPSS} \\
+     \textbf{Relevant Coursework}{: Financial Institutions and Markets, Economics, Bloomberg Market Concepts, Accounting} \\
+    }}
+ \end{itemize}
+ \vspace{-17pt}
+ 
+%-----------EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Research Assistant - Board of Directors in Corporate Governance Scandals}{July 2023 -- April 2024}
+      {Prof. Nuno Fernandes, Finance and Accounting | IESE Business School}{University of Navarra, ES}
+      \vspace{-2pt}
+      \resumeItemListStart
+        \resumeItem{Performed equity analysis on \textbf{Dow 30, Euro Stoxx 50, and Top 10 European banks} from annual reports; Analyzed the data and performed feature engineering using Python.}
+        \resumeItem{Analysed \textbf{mergers \& acquisitions} of global firms and prepared 30+ case studies on companies that faced \textbf{corporate governance scandals} from 500+ news articles and annual reports.}
+        \resumeItem{Developed \textbf{Python} models to extract the data from \textbf{1000+ research articles and 300+ annual reports} to build analysis models and understand the \textbf{impact of decisions of board members} on financial performance.}
+        \resumeItem{Constructed a database of top Portuguese companies with corporate governance details of the board of directors and executives, including tenure duration, \textbf{total compensation, fixed compensation, and variable compensation}.}
+      \resumeItemListEnd
+      \vspace{-8pt}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Research Assistant - Image-Based Machine Learning using Python}{August 2023 -- November 2023}
+      {Prof. Jaideep Prabhu | Cambridge Judge Business School}{University of Cambridge, GB}
+      \vspace{-2pt}
+      \resumeItemListStart
+        \resumeItem{Developed a picture coding Machine Learning model using \textbf{Python}, leveraging various \textbf{computer vision algorithms}}
+        \resumeItem{Leveraged machine learning models to classify text styles using \textbf{Python} programming, \textbf{Deep Learning}, and \textbf{OpenCV} for image processing and py-tesseract for \textbf{Optical Character Recognition (OCR)}}
+        \resumeItem{Built a \textbf{Machine learning model} using Tesseract algorithms to identify text from \textbf{2000+} micro-entrepreneur images.}
+      \resumeItemListEnd
+      \vspace{-8pt}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Research Intern - Assessing Bankruptcy Risk in Indian PSUs in Adoption of TReDS}{May 2023 -- June 2023}
+      {Prof. Aswin Alora | Finance and Control Department IIM Kozhikode}{IIM Kozhikode, IN}
+      \vspace{-2pt}
+      \resumeItemListStart
+        \resumeItem{Studied the impact on bankruptcy risk of Indian firms by analyzing the impact caused on the \textbf{Zmijewski Financial Score (ZFS)} due to the adoption of TReDS by Public Sector Undertaking (PSU) firms of India.}
+        \resumeItem{Extracted and analyzed financial data of 90+ firms in India based on pre- and post-TReDS adoption period using \textbf{Bloomberg Terminal}; Conducted comprehensive study of \textbf{Supply Chain Finance} solution implemented by RBI.}
+        \resumeItem{Identified a \textbf{23\%} reduction in bankruptcy risk on companies due to TReDS adoption; Deployed logistic regression and statistical models on financial ratios and Zmijewski Financial Score using Python and SPSS.}
+      \resumeItemListEnd
+      \vspace{-8pt}
+  \resumeSubHeadingListEnd
+
+\vspace{-8pt}
+
+%----------INTERNSHIP-----------
+\section{Internship}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Equity Markets and Investment Banking Research Intern}{January 2023 – April 2023}
+      {Finlatics}{India}
+      \resumeItemListStart
+        \resumeItem{Built finance and consulting project aiming to assess investment proposals and identify potential start-ups.}
+        \resumeItem{Participated in establishing a \textbf{Private Equity fund}, focusing on optimizing investment cycles and sectoral orientation.}
+        \resumeItem{Conducted a detailed analysis of \textbf{M\&A} in Indian markets to identify successful exits within the private equity space.}
+        \resumeItem{Maintained a real-time virtual stock market portfolio for two months; generated an ROI of \textbf{23.19\%} with 200k capital.}
+      \resumeItemListEnd
+      \vspace{-7pt}
+    \resumeSubHeadingListEnd
+\vspace{-7pt}
+%-----------PROJECTS-----------
+\section{Project}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+     \resumeProjectHeading
+          {\textbf{Statistical Modelling of Temperature Data} $|$ \emph{Prof. Poulomi Ganguli}}{September 2023 - November 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a probabilistic statistical model by extracting historical temperature data from open-source NOAA databases, to forecast temperature trends, contributing valuable insights for climate risk management and mitigation strategies.}
+            \resumeItem{Employed Kolmogorov-Smirnov, Cramer-von Mises, and Anderson-Darling tests to validate the fit of the probabilistic model, ensuring high accuracy; achieved a low MSE value of 0.022}
+            \resumeItem{Applied \textbf{gamma distribution} to model temperature variability for understanding of extreme temperature conditions.} 
+            \resumeItem{Experienced with \textbf{RStudio}, and various R packages including \textbf{dplyr, ggplot2, forecast, knitr, lubridate, changepoint, e1071, and fitdistrplus} for advanced statistical analysis.}
+          \resumeItemListEnd 
+          \vspace{-8pt}
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%---------Competition and Conference-------------
+\section{Competition / Conference}
+    \resumeItemListStart
+            \resumeItem{\textbf{Quant Quest IIT Madras}: Won \textbf{\textit{National Rank 2}} at the Alorithmic Trading Competition conducted by IIT Madras: Generated 48.9\% ROI using Options Strike and MACD Strategy}
+            \resumeItem{\textbf{Beyond Chatbot Fintech Hackathon}: Won \textit{Top Risk Management Innovation Award} at global fintech hackathon conducted by Cambridge Centre for Alternative Finance at University of Cambridge.}
+            \resumeItem{\textbf{Algorithmic Trading Hackathon}: Designed a profitable portfolio by Algorithmic Trading Strategy with ROI of \textbf{102.41\%} and Sharp ratio of \textbf{2.45} on backtesting.}
+            \resumeItem{\textbf{Asia Investment Banking Conference (AIBC) 2023}: One of the \textbf{top 350 students} invited globally by LSE.}
+            \resumeItem{\textbf{HPAIR 2024}: Got selected among the top 2000 students invited globally for HCONF conducted by Harvard University}
+       
+    \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+        \resumeItemListStart
+            \resumeItem{Member of the Gold winning football team of Rajendra Prasad Hall of Residence in the sports GC IIT Kharagpur 2023}
+            \resumeItem{\textbf{Rajya Puraskar Award} winner in Bharat Scout \& Guides; Managed troop of 32 scouts as troop leader for \textbf{3 years}}
+            \resumeItem{Secured \textbf{Rank 1} in State-level Science Talent Search Exam in 2017; highest possible award in high school}
+            \resumeItem{Among top \textbf{1\%} mentors at topmate.io (only 2000 mentors globally); Creator in LinkedIn with \textbf{200k+} impressions}
+            \resumeItem {Worked as a part-time finance content writer at NISM SEBI, \textbf{Published articles: https://bit.ly/3viPxYW}}
+            \resumeItemListEnd
+            
+        
+    \resumeSubHeadingListEnd
+
+
+\end{document}
