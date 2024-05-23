@@ -1,0 +1,271 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{#1}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\hspace*{\fill}  \CGPA{\textbf{CGPA : 7.51/10}}\fakeNewLine}
+
+% Create project heading. Parameters: Name, link, Tech stack
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
+\descript{#3}\\}
+
+\newcommand{\projectHeadingWithDate}[4]{\Project{#1}{#2}
+\descript{#3 | #4}\\}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+
+\newcommand{\yourName}{Denny B. Justin}
+% How you want it to show up on the resume
+\newcommand{\yourWebsite}{dennybjustin}
+% vs how you want it to show up. If it's the same you can just replace "\yourWebsiteLink" with "yourWebsite"
+\newcommand{\yourWebsiteLink}{https://sites.google.com/view/dennybjustin/home}
+\newcommand{\yourEmail}{dennybjustin2911.iitkgp@gmail.com}
+\newcommand{\yourPhone}{+91 9400626304}
+\newcommand{\githubUserName}{Denny-B-Justin}
+\newcommand{\linkedInUserName}{denny-b-justin-2340a1215}
+
+\begin{center}
+    \Huge \scshape \latoRegular{\yourName} \\ \vspace{1pt}
+    \small \href{mailto:\yourEmail}{{\yourEmail}}  $|$  \yourPhone  $|$  \href{https://www.linkedin.com/in/\linkedInUserName}{{\linkedInUserName}}
+    $|$ \href{\yourWebsiteLink}{ portfolio/\underline{\yourWebsite}} $|$  \href{https://github.com/\githubUserName}{{github/\githubUserName}}
+\end{center}
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+% Put school first and degree second if your school is reputable
+\educationHeading {Dual Degree in Agricultural and Food Engineering (M.Tech Dual 5 yr)}{Indian Institute of Technology, Kharagpur}{India}{November 2020 to Present}
+
+\item Agricultural Systems and Management
+\item Micro-specialization in Entrepreneurship and Innovation
+%\courseWork{Micro-specialization in Entrepreneur and Innovation}
+\sectionsep  
+
+\section{Publications}
+\resumeHeading{\href{}{Investment Analysis of Tata Consultancy Services}}{ Financial Analyst Program 2023, Finlatics}\\
+{Link: https://bit.ly/4hgusik   | April 2023 }
+\begin{bullets}
+    \item Devised investment strategies by conducting fundamental and technical company financial performance analyses.
+    \item Got recognized for delivering the \textbf{best equity research report} among the top \textbf{2,000 articles} and published.
+\end{bullets}
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Research Projects}
+\resumeHeading{\href{}{Image-Based Machine Learning for MSME Development}}{Research Assistant, University of Cambridge}\\
+{Mentor- Prof. Jaideep Prabhu, Cambridge Judge Business School | August 2023 – March 2024}
+\begin{bullets}
+    \item Comprehensive study on \textbf{CSR practices} adopted by MSME firms; Observed an increase of 60\% increase MSMEs.
+    \item Developed a picture coding Machine Learning model using \textbf{Python}, leveraging various \textbf{computer vision algorithms}. 
+    \item Built a \textbf{Machine learning model} using Tesseract algorithms to identify text from \textbf{2000+} micro-entrepreneur images.   
+    \item Working on \textbf{Web Scrapping} project using Python to provide administrational data-driven decision-making.
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+ 
+\end{bullets}
+\sectionsep
+\resumeHeading{\href{}{Board of Directors in Corporate Governance Scandals}}{ Research Assistant, IESE Business School}\\
+{Mentor- Prof. Nuno Fernandes, Finance Dep. IESE Business School Barcelona | July 2023 – April 2024}
+\begin{bullets}
+    \item Performed equity analysis on \textbf{Dow 30, Euro Stoxx 50, and Top 10 European banks} from annual reports; Analyzed the data and performed feature engineering using Python.
+    \item Analysed \textbf{mergers \& acquisitions} of global firms and prepared 30+ case studies on companies that faced \textbf{corporate governance scandals} from 500+ news articles and annual reports.
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+    
+    \item Developed \textbf{Python} models to extract the data from \textbf{1000+ research articles and 300+ annual reports} to build analysis models and understand the \textbf{impact of decisions of board members} on financial performance.
+    \item Constructed a database of top Portuguese companies with corporate governance details of the board of directors and executives, including tenure duration, \textbf{total compensation, fixed compensation, and variable compensation}.
+\end{bullets}
+\sectionsep
+
+\resumeHeading{\href{}{Assessing Bankruptcy Risk in Indian PSUs in adoption of TReDS}}{Research Intern, IIM Kozhikode}\\
+{Mentor- Prof. Aswin Alora, Finance and Control Dep. IIM Kozhikode | May 2023 – June 2023}
+\begin{bullets}
+    \item Studied the impact on bankruptcy risk of Indian firms by analyzing the impact caused on the \textbf{Zmijewski Financial Score (ZFS)} due to the adoption of TReDS by Public Sector Undertaking (PSU) firms of India. 
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+    \item Extracted and analyzed financial data of 90+ firms in India based on pre- and post-TReDS adoption period using \textbf{Bloomberg Terminal}; Conducted comprehensive study of \textbf{Supply Chain Finance} solution implemented by RBI.
+    \item {Identified a \textbf{23\%} reduction in bankruptcy risk on companies due to TReDS adoption; Deployed logistic regression and paired T-test on financial ratios and Zmijewski Financial Score using Python and SPSS.}
+	\item Extracted and analysed secondary financial data of Indian firms using \textbf{Python, Bloomberg and SPSS} software. 
+
+\end{bullets}
+%\sectionsep 
+
+%\resumeHeading{\href{}{Quantitative Finance Application}}{Self Project, Machine Learning, Finance}\\{J.P Morgan Chase and Co., Forge Virtual Training | September 2023- Present}
+%\begin{bullets}
+    %\item Forecasted natural gas cost using \textbf{regression machine learning model} and Python; Time series analysis.
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+    %\item Programmed a classification model using \textbf {logistic regression} to understand the credit risk of issuing bank loans.  
+    %\item Future approach involves developing FICO score analysis and commodity pricing models using machine learning.
+
+%\end{bullets}
+ 
+%\resumeHeading{\href{}{Intervene of Central Bank in Currency market and how it transmits to the economic activity}}{Finance}\\
+%{Mentor- Ajay Kumar Mishra, Vinod Gupta School of Management | September 2022 – November 2022}
+%\begin{bullets}
+    %\item Analyzed the central bank monitoring instruments like CRR, Repo rates etc. to maintain equilibrium between supply and demand and prevent the nation from inflation.
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+    %\item Evaluated the monetary policy impulses by central banks transmitted to various interest rates, which alter the aggregate demand of households and firms and impact the broader.
+    %\item Conducted a case study on the SLR/USD exchange rate intervention due to the currency market in Sri Lanka using samples from 2002 to 2010. 
+%\end{bullets}
+
+%\sectionsep 
+%\sectionsep 
+%--------------------------------------------------------------
+%     Internships
+%--------------------------------------------------------------
+\section{Internships}
+\resumeHeading{\href{}{Financial Markets Intern }}{National Institution of Securities and Markets (NISM), SEBI}\\
+{Articles: https://bit.ly/3viPxYW | Securities and Exchange Board of India | September 2023 – November 2023}
+\begin{bullets}
+    \item Developed content explaining the features, benefits, and caution on investing in various financial market instruments, including \textbf{Financial Analysis, Stock Valuation, Asset Management, and Algorithmic trading}.
+    \item Obtained \textbf{8 Million+ views} by developing \textbf{SEO strategies} and optimized content to improve search engine rankings.
+    \item Contributed to NISM's blog pages, ensuring the publication of well-researched, accurate, and timely content.
+    
+     
+\end{bullets}
+\sectionsep
+\resumeHeading{\href{}{Equity Markets and Investment Banking Research }}{Stock Market, Finance, Market research}\\
+{Finlatics | January 2023 – April 2023}
+\begin{bullets}
+    \item Built finance and consulting project aiming to assess investment proposals and identify potential start-ups
+    \item Engaged in the setup of a \textbf{Private Equity fund}, focusing on \textbf{investing cycles and sectoral orientation}.
+    \item Analysed \textbf{mergers \& acquisitions} in Indian markets to find successful exits in the private equity space. 
+    \item Identified emerging market opportunities and potential risks to create well-informed investment strategies.
+    \item Maintained a real-time virtual stock market portfolio for two months; generated a total return of \textbf{23.19\%}.
+    
+    
+\end{bullets}
+
+%--------------------------------------------------------------
+%     Leadership
+%--------------------------------------------------------------
+\section{Leadership}
+\resumeHeading{\href{}{Executive Student Member}}{Institute Wellness Group, IIT Kharagpur}\\ {Mental and Academic Well Being of Students | August 2021- April 2022}
+\begin{bullets}
+    \item  Led a team of \textbf{31} Associate Student Members to ensure the effective and smooth functioning of the events.
+    \item Organized an online webinar on "Selfcare"; budgeted the event and audited an account of \textbf{1 Lakh INR}.
+    \item Achieved  \textbf{15\% YoY} increase in footfall for the event "Moments of Gratitude" with over \textbf{500+} participants.
+\end{bullets}
+
+\sectionsep 
+\resumeHeading{\href{}{Secretary}}{Communique, IIT Kharagpur}\\ {Official Soft Skills \& Personality Development Society of IIT Kharagpur | August 2021 - April 2022}
+\begin{bullets}
+    \item Coordinated and delivered keynote presentation during the introductory seminar with \textbf{1000+} first-year students.
+    \item Managed a group of \textbf{25 Associates} \& organised a webinar on "Internship-gear up" with 400+ student participation.
+    
+\end{bullets}
+%--------------------------------------------------------------
+%     Competition and Conference
+%--------------------------------------------------------------
+\section{Competition and Conference}
+\resumeHeading{\href{}{Delegate}}{Harvard Conference (HCONF) 2024, Cambridge, Massachusetts}\\ {Harvard Project for Asian and International Relations (HPAIR) | December 2023}
+\begin{bullets}
+    \item  One of the \textbf{top 2000 students} invited globally for \textbf{HCONF 2024} organized by Harvard University.  
+\end{bullets}
+\sectionsep 
+\resumeHeading{\href{}{Delegate}}{Asian Investment Banking Conference (AIBC) 2023, Hong Kong}\\ {London School of Economics | August 2023}
+\begin{bullets}
+    \item  One of the \textbf{top 350 students} invited globally for \textbf{AIBC 2023} organized by London School of Economics (LSE).  
+\end{bullets}
+\sectionsep 
+\resumeHeading{\href{}{Beyond Chatbot Fintech Hackathon}}{ University of Cambridge, Machine Learning, FinTech}\\
+{Cambridge SupTech Labs, Cambridge Centre for Alternative Finance | July 2023 – August 2023}
+\begin{bullets}
+    \item Participated and delivered keynote presentation for global fintech hackathon - "Beyond Chatbot Fintech Hackathon" based on innovation in customer complaint data management 
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+    \item Developed machine learning model of \textbf{69.5\% accuracy} using the \textbf{Random Forest} to analyze systemic risk engaged with customer complaints and developed a model desktop for firms to study risk engaged with complaints.
+\end{bullets}
+\sectionsep 
+\resumeHeading{\href{}{Algorithmic Trading Hackathon}}{ Quantitative Financial Strategy, Stock Market}\\
+{AlgoSwarm 2023, QuantHive | May 2023}
+\begin{bullets}
+    \item  Designed a profitable portfolio by \textbf{Algorithmic Trading Strategy} using Blueshift software and technical indicators.  
+    %  \item Here is another bullet that I might choose to uncomment for some jobs
+    \item Obtained a cumulative return of \textbf{102.41\%} and Sharp ratio of \textbf{2.45} by backtesting with the stock price data.
+\end{bullets}
+
+%--------------------------------------------------------------
+%     Courses
+%--------------------------------------------------------------
+\section{Courses}
+
+\projectHeading{\textbf{BLOOMBERG MARKET CONCEPTS}}{https://portal.bloombergforeducation.com/certificates/oDZAewAg6hr6rWxNxbri1XBZ}{\textbf{Bloomberg}}
+\\
+\sectionsep
+\projectHeading{\textbf{FINANCIAL INSTITUTIONS AND MARKET}}{https://drive.google.com/file/d/1qV5V5qelQ7591v87lOowsrNx-RrmHBQq/view?usp=sharing}{\textbf{Vinod Gupta School of Management}}
+%\\
+%\sectionsep
+%\projectHeading{\textbf{FINANCIAL AND LEGAL ASPECTS OF NEW TECHNOLOGY VENTURES}}{http://www.see.iitkgp.ac.in/wp-content/uploads/2017/07/RMSOEE_Detailed-Course.pdf}{\textbf{RMSOEE | Ongoing}}
+
+%\\
+%$\sectionsep
+%\projectHeading{\textbf{PROBABILITY AND STATISTICS}}{http://www.facweb.iitkgp.ac.in/~bibhas/Detailed_Syllabus_PS.pdf}{\textbf{Department of Mathematics| GPA: 10/10}}
+
+\\
+\sectionsep
+\projectHeading{Economics}{https://spookbite.github.io/kronos_syllabus/HS20001.pdf}{Humanities and Social Sciences Department}
+%\\
+%\sectionsep
+%\projectHeading{Python For Everybody}{https://coursera.org/share/737c1c24ea953dbff176d4bf9e017785}{Coursera | University of Michigan}
+
+
+\\
+\sectionsep
+\projectHeading{Programming and Data Structures}{https://cse.iitkgp.ac.in/pds/}{Computer Science Dept.}
+%\\
+%\sectionsep
+
+%\projectHeading{Artificial Intelligence}{https://onestop-prod.s3.ap-south-1.amazonaws.com/student_participation_certificates/12/Denny_Nov_2021_participation_13315.pdf}{Personifwy, 1stop | IIT Bombay}
+
+\sectionsep
+% Example using bullets and dates 
+% \projectHeadingWithDate{Hogwart\textquotesingle{}s Library Management System}{https://github.com/Aarif123456/hogwartslibrary}{PHP, JavaScript, HTML, CSS, MySQL}{Aug 2019}
+% \begin{bullets}
+    % \item A full-stack library management system, where users can manage books and holds on their accounts. Users can search the library\textquotesingle{}s catalogue, which has every book mentioned in the Harry Potter series. The system distinguishes between 4 users. For examples, librarians who can also check or return books on behalf of users.\\
+% \end{bullets}
+% \sectionsep
+  
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+
+
+\section{Skills}
+\begin{skillList}
+    \singleItem{Programming:}{Python, RStudio, C, C++, SQL, MATLAB,
+    NumPy, Pandas, Scikit-learn, Matplotlib, BigQuery, OpenCV, LaTex, SPSS}  \\
+    \singleItem{Finance and Stock Market tools:}{Bloomberg Terminal, Big Data, MS Excel, Blueswift, Yahoo Finance, TradingView, Investopedia} \\
+    \singleItem{Authorized Author at:}{National Institute of Securities Markets (NISM) }
+    \\
+ 
+\end{skillList}
+
+% A more concise alternate 
+% \begin{skillList}
+%     \doubleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, Bash, C, Racket}%
+%     {Databases:}{SQL, MongoDB, Neo4j, DynamoDB}
+%     \\
+%     \doubleItem{Web Development:}{JavaScript, TypeScript, React, HTML/CSS}
+%     {Technology:}{Git, AWS, GCP, Azure, Docker, \LaTeX}%
+% \end{skillList}
+\end{document}
+
